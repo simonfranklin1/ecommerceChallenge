@@ -206,14 +206,11 @@ nav {
     background-color: #F0F0F0;
 }
 
-.minus img, .plus img {
-    background-color: #F0F0F0;
-}
-
 .minus, .plus {
     border: none;
     cursor: pointer;
     transition: 0.2s;
+    background-color: #F0F0F0;
 }
 
 .minus:hover, 

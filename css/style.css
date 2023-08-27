@@ -203,7 +203,11 @@ nav {
     height: 50px;
     margin:10px auto;
     border-radius: 10px;
-    background-color: hsla(220, 14%, 75%, 0.103);
+    background-color: #F0F0F0;
+}
+
+.minus img, .plus img {
+    background-color: #F0F0F0;
 }
 
 .minus, .plus {

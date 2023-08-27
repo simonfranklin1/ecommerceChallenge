@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [E commerce product page](https://simonfranklin1.github.io/ecommerceChallenge/)
+- Live Site URL: [E-commerce product page](https://simonfranklin1.github.io/ecommerceChallenge/)
 
 ## My process
 

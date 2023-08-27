@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/interacoes.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>    
+    <nav>
+      <div id="p1">
+        <div id="menu" onclick="openMenu()">
+          <img src="images/icon-menu.svg" alt="">
+        </div>
+        <div id="logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <div id="contact-section">
+          <a href="">Collections</a>
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+
+      <div id="p2">
+        <div id="cart-icon">
+          <div id="cart-notification">1</div>
+          <img src="images/icon-cart.svg" alt="Cart-icon">
+        </div>
+        <div id="avatar">
+          <img src="images/image-avatar.png" alt="Avatar">
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="background"></div>    
+      <aside id="menu-open">
+        <!--<button id="close"><img src="images/icon-close.svg" alt="" onclick="closeMenu()"></button>
+        <a href="#"><p>Collections</p></a>
+        <a href="#"><p>Men</p></a>
+        <a href="#"><p>Women</p></a>
+        <a href="#"><p>About</p></a>
+        <a href="#"><p>Contact</p></a>-->
+      </aside>
+      <section id="carrossel">
+        <div id="cart">
+          <div id="cart-title">Cart</div>
+          <div id="cart-text">Your cart is empty</div>
+          <div id="cart-buy">
+            <div id="product"> 
+              <div id="sneaker">
+                <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail product">
+                <p>Fall Limited Edition Sneakers <br> $125.00 x 3 <b>$375.00</b></p>
+              </div> 
+              <div id="delete">
+                <img src="images/icon-delete.svg" alt="Delete">
+              </div>
+            </div>
+            <button id="checkout-button" onclick="thanksMessage()">Checkout</button>
+          </div>
+        </div>
+        <!-- Mobile-->
+        <div id="botoes">
+          <button class="botao" id="previous">
+            <img src="images/icon-previous.svg" alt="Previous">
+          </button>
+          <button class="botao" id="next">
+            <img src="images/icon-next.svg" alt="Next">
+          </button>
+        </div>
+        
+        <div id="mobile-images">
+          <img src="images/image-product-1.jpg" alt="Imagem 1" class="imagem ativa">
+          <img src="images/image-product-2.jpg" alt="Imagem 2" class="imagem">
+          <img src="images/image-product-3.jpg" alt="Imagem 3" class="imagem">
+          <img src="images/image-product-4.jpg" alt="Imagem 4" class="imagem">
+        </div>
+
+        <!-- Desktop-->
+        <div id="desktop-images">
+          <img src="images/image-product-1.jpg" alt="Imagem 1" class="dImagem dAtiva">
+          <img src="images/image-product-2.jpg" alt="Imagem 2" class="dImagem">
+          <img src="images/image-product-3.jpg" alt="Imagem 3" class="dImagem">
+          <img src="images/image-product-4.jpg" alt="Imagem 4" class="dImagem">
+        </div>
+
+        <ul id="botoesCarrossel">
+          <li>
+            <img class="btnC dSelect" src="images/image-product-1-thumbnail.jpg" alt="thumbnail1">
+          </li>
+          <li>
+            <img class="btnC"
+             src="images/image-product-2-thumbnail.jpg" alt="thumbnail2">
+          </li>
+          <li>
+            <img class="btnC" src="images/image-product-3-thumbnail.jpg" alt="thumbnail3">
+          </li>
+          <li>
+            <img class="btnC" src="images/image-product-4-thumbnail.jpg" alt="thumbnail4">
+          </li>
+        </ul>
+      </section>
+      <div id="main-2">
+        <section id="text">
+          <h3>Sneaker Company</h3>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        </section>
+        <section id="buy">
+          <div id="numbers">
+            <div class="price-discount">
+              <div class="price"><h3>$125.00</h3></div>
+              <div class="discount"><h4>50%</h4></div>
+            </div>
+        
+            <div class="real-price">
+              <div class="past-price"><h4>$250.00</h4></div>
+            </div>
+          </div>
+          <section id="add">
+            <div class="quantity">
+              <button class="minus" onclick="addLess()">
+                <img src="images/icon-minus.svg" alt="">
+              </button>
+              <button value="0" id="number"></button>
+              <button class="plus" onclick="addMore()">
+                <img src="images/icon-plus.svg" alt="">
+              </button>
+            </div>
+            <div id="button_buy">
+              <svg class="cart" width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="hsl(223, 64%, 98%)" fill-rule="nonzero"/>
+              </svg>
+              Add to cart</div>
+          </section>
+        </section>
+      </div>
+    </main>
+    <footer> 
+      Challenge by <a href="https://www.frontendmentor.io/" target="_blank"><b>Front end Mentor</b></a> code by <a href="https://github.com/simonfranklin1" target="_blank"><b>Simon Franklin</b></a>
+    </footer>
+    <div id="desktop-open-images">
+      <div id="bImages">
+        <h2 id="close-bigDesktop">x</h2>
+        <div id="big-desktop-images">
+          <div id="buttonsB">
+            <button class="botaoB" id="nextB"> > </button>
+            <button class="botaoB" id="prevB"> < </button>
+          </div>
+          <img src="images/image-product-1.jpg" alt="Imagem 1" class="dBImage dBActive">
+          <img src="images/image-product-2.jpg" alt="Imagem 2" class="dBImage">
+          <img src="images/image-product-3.jpg" alt="Imagem 3" class="dBImage">
+          <img src="images/image-product-4.jpg" alt="Imagem 4" class="dBImage">
+        </div>
+        <ul id="big-botoesCarrossel">
+          <li>
+            <img class="bBtnC dBSelect" src="images/image-product-1-thumbnail.jpg" alt="thumbnail1">
+          </li>
+          <li>
+            <img class="bBtnC"
+             src="images/image-product-2-thumbnail.jpg" alt="thumbnail2">
+          </li>
+          <li>
+            <img class="bBtnC" src="images/image-product-3-thumbnail.jpg" alt="thumbnail3">
+          </li>
+          <li>
+            <img class="bBtnC" src="images/image-product-4-thumbnail.jpg" alt="thumbnail4">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>  
+</body>
+<script src="script.js"></script>
+</html>

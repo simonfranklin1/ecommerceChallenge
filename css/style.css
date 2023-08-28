@@ -213,6 +213,11 @@ nav {
     background-color: #F0F0F0;
 }
 
+#number {
+    color: rgb(22, 22, 22);
+    background-color: #F0F0F0;
+}
+
 .minus:hover, 
 .plus:hover {
     scale: 1.2;

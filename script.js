@@ -5,6 +5,9 @@
     
     let price = 125.00;
     let newPrice = 0
+
+    const btnPlus = document.querySelector('#plus');
+    const btnLess = document.querySelector('#minus');
     
     let addMore = function() {
         num.value++;
@@ -22,6 +25,9 @@
         newPrice = price * num.value
         console.log(newPrice);
     }
+
+    btnPlus.addEventListener("click", addMore);
+    btnLess.addEventListener("click", addLess);
     
 /* Imagens mobile */
     

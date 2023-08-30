@@ -206,15 +206,10 @@ nav {
     background-color: #F0F0F0;
 }
 
-.minus, .plus {
+#minus, #plus {
     border: none;
     cursor: pointer;
     transition: 0.2s;
-    background-color: #F0F0F0;
-}
-
-#number {
-    color: rgb(22, 22, 22);
     background-color: #F0F0F0;
 }
 
@@ -226,6 +221,9 @@ nav {
 #number {
     border: none;
     font-size: 16px;
+    color: rgb(22, 22, 22);
+    background-color: #F0F0F0;
+    font-weight: bold;
 }
 
 #button_buy {

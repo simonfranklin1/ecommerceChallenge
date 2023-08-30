@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/interacoes.css">
@@ -11,63 +10,47 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script>
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
 <body>    
-    <nav>
-      <div id="p1">
-        <div id="menu" onclick="openMenu()">
-          <img src="images/icon-menu.svg" alt="">
+    <header>
+      <nav>
+        <div id="p1">
+          <div id="menu">
+            <img src="images/icon-menu.svg" alt="menu">
+          </div>
+          <div id="logo">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+          <div id="contact-section">
+            <a href="">Collections</a>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </div>
         </div>
-        <div id="logo">
-          <img src="images/logo.svg" alt="">
+        <div id="p2">
+          <div id="cart-icon">
+            <div id="cart-notification">1</div>
+            <img src="images/icon-cart.svg" alt="Cart-icon">
+          </div>
+          <div id="avatar">
+            <img src="images/image-avatar.png" alt="Avatar">
+          </div>
         </div>
-        <div id="contact-section">
-          <a href="">Collections</a>
-          <a href="">Men</a>
-          <a href="">Women</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
-        </div>
-      </div>
-
-      <div id="p2">
-        <div id="cart-icon">
-          <div id="cart-notification">1</div>
-          <img src="images/icon-cart.svg" alt="Cart-icon">
-        </div>
-        <div id="avatar">
-          <img src="images/image-avatar.png" alt="Avatar">
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
       <div id="background"></div>    
       <aside id="menu-open">
-        <!--<button id="close"><img src="images/icon-close.svg" alt="" onclick="closeMenu()"></button>
-        <a href="#"><p>Collections</p></a>
-        <a href="#"><p>Men</p></a>
-        <a href="#"><p>Women</p></a>
-        <a href="#"><p>About</p></a>
-        <a href="#"><p>Contact</p></a>-->
       </aside>
       <section id="carrossel">
         <div id="cart">
           <div id="cart-title">Cart</div>
           <div id="cart-text">Your cart is empty</div>
-          <div id="cart-buy">
-            <div id="product"> 
-              <div id="sneaker">
-                <img src="images/image-product-1-thumbnail.jpg" alt="Thumbnail product">
-                <p>Fall Limited Edition Sneakers <br> $125.00 x 3 <b>$375.00</b></p>
-              </div> 
-              <div id="delete">
-                <img src="images/icon-delete.svg" alt="Delete">
-              </div>
-            </div>
-            <button id="checkout-button" onclick="thanksMessage()">Checkout</button>
-          </div>
+          <div id="cart-buy"></div>
         </div>
         <!-- Mobile-->
         <div id="botoes">
@@ -110,7 +93,7 @@
           </li>
         </ul>
       </section>
-      <div id="main-2">
+      <div id="container">
         <section id="text">
           <h3>Sneaker Company</h3>
           <h2>Fall Limited Edition Sneakers</h2>

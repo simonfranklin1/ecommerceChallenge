@@ -213,8 +213,8 @@ nav {
     background-color: #F0F0F0;
 }
 
-.minus:hover, 
-.plus:hover {
+#minus:hover, 
+#plus:hover {
     scale: 1.2;
 }
 
